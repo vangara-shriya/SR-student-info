@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="STUDENT INFO" max_length="40" name="x_594732_srec_student_info" sizeclass="2" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Branch" max_length="40" name="branch" type="string"/>
+        <element label="CGPA" max_length="40" name="cgpa" type="float"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Phone Num" max_length="40" name="phone_num" type="phone_number_e164"/>
+        <element label="Roll no" max_length="40" name="roll_no" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Student Name" max_length="40" name="student_name" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
